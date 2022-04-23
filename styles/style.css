@@ -1,0 +1,126 @@
+/* Lato Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+    --clr-primary: #047aed;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.5;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%; /*this will keep the image in the container even if it is larger than container*/
+}
+
+/* General Styles */
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+}
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin-block: 10px;
+}
+p {
+    margin-block: 10px;
+}
+
+/* Section styling now */
+/* Navbar */
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    padding-inline: 10px;
+    margin-inline: 5px;
+}
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Showcase */
+.showcase {
+    background-color: var(--clr-primary);
+    height: 500px;
+    color: #fff;
+    position: relative;
+}
+.showcase .grid {
+    grid-template-columns: 50% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase h1 {
+    font-size: 40px;
+}
+.showcase p {
+    margin-block: 20px;
+}
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+.showcase-form .form-control {
+    margin-block: 40px;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    outline: none;
+    padding: 3px;
+    font-size: 1rem;
+}
+/* addding white slant */
+.showcase::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+}
+
+/* Stats */
+.stats {
+    padding-top: 100px;
+}
