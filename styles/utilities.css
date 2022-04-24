@@ -45,6 +45,43 @@
     background-color: transparent;
     border: 1px solid #fff;
 }
+.bg-primary,
+.btn-primary {
+    background-color: var(--clr-primary);
+    color: #fff;
+}
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--clr-secondary);
+    color: #333;
+}
+.bg-dark,
+.btn-dark {
+    background-color: var(--clr-dark);
+    color: #fff;
+}
+.bg-light,
+.btn-light {
+    background-color: var(--clr-light);
+    color: #333;
+}
+/* text sizes */
+.lead {
+    /*for paragraphs*/
+    font-size: 20px;
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg {
+    font-size: 3rem;
+}
+.xl {
+    font-size: 4rem;
+}
 /* margins */
 .my-1 {
     margin-block: 1rem;
