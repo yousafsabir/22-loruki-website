@@ -82,6 +82,24 @@
 .xl {
     font-size: 4rem;
 }
+/* Alert */
+.alert {
+    background-color: var(--clr-light);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-block: 15px;
+}
+.alert i {
+    margin-right: 10px;
+}
+.alert-success {
+    background-color: var(--clr-success);
+    color: #fff;
+}
+.alert-error {
+    background-color: var(--clr-error);
+    color: #fff;
+}
 /* margins */
 .my-1 {
     margin-block: 1rem;

@@ -6,6 +6,8 @@
     --clr-secondary: #1c3fa8;
     --clr-dark: #002240;
     --clr-light: #f4f4f4;
+    --clr-success: #5cb85c;
+    --clr-error: #d9534f;
 }
 
 /* Reset */
@@ -184,7 +186,8 @@ p {
 
 /* Features Page here */
 /* Features Head */
-.features-head img {
+.features-head img,
+.docs-head img {
     width: 200px;
     justify-self: end;
 }
@@ -206,6 +209,29 @@ p {
 }
 .features-main .grid .card:nth-child(2) {
     grid-column: 1 / span 2;
+}
+
+/* docs */
+.docs-main h3 {
+    margin-block: 20px;
+}
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+}
+.docs-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    transition: font-weight 0.3s ease-in;
+    -webkit-transition: font-weight 0.3s ease-in;
+    -moz-transition: font-weight 0.3s ease-in;
+    -ms-transition: font-weight 0.3s ease-in;
+    -o-transition: font-weight 0.3s ease-in;
+}
+.docs-main nav li:hover {
+    font-weight: bold;
 }
 /* footer */
 .footer .socials a {
