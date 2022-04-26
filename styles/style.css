@@ -54,7 +54,7 @@ code {
     color: #fff;
 }
 .hidden {
-    visibility: none;
+    visibility: hidden;
     height: 0;
 }
 
