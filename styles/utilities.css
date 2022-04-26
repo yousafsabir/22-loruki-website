@@ -21,6 +21,19 @@
 .text-center {
     text-align: center;
 }
+/* text-colors */
+.text-primary {
+    color: var(--clr-primary);
+}
+.text-secondary {
+    color: var(--clr-secondary);
+}
+.text-light {
+    color: var(--clr-light);
+}
+.text-dark {
+    color: var(--clr-dark);
+}
 .btn {
     display: inline;
     padding: 10px 30px;
