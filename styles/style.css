@@ -180,6 +180,14 @@ code {
 }
 
 /* languages */
+.languages .flex {
+    flex-wrap: wrap;
+    -ms-overflow-style: none; /*hide scrollbar on edge, IE*/
+    scrollbar-width: none; /*on firefox*/
+}
+.languages .flex::-webkit-scrollbar {
+    display: none; /*on chrome, safari*/
+}
 .languages .card {
     text-align: center;
     margin: 18px 10px 40px;
@@ -188,9 +196,6 @@ code {
     -moz-transition: transform 0.2s ease-in;
     -ms-transition: transform 0.2s ease-in;
     -o-transition: transform 0.2s ease-in;
-}
-.languages .flex {
-    flex-wrap: wrap;
 }
 .languages .card h4 {
     font-size: 20px;
