@@ -191,23 +191,11 @@ code {
 .languages .card {
     text-align: center;
     margin: 18px 10px 40px;
-    /* transition: transform 0.2s ease-in;
-    -webkit-transition: transform 0.2s ease-in;
-    -moz-transition: transform 0.2s ease-in;
-    -ms-transition: transform 0.2s ease-in;
-    -o-transition: transform 0.2s ease-in; */
 }
 .languages .card h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-/* .languages .card:hover {
-    transform: translateY(-15px) !important;
-    -webkit-transform: translateY(-15px) !important;
-    -moz-transform: translateY(-15px) !important;
-    -ms-transform: translateY(-15px) !important;
-    -o-transform: translateY(-15px) !important;
-} */
 
 /* Features Page here */
 
@@ -292,7 +280,9 @@ code {
 .footer .socials a:nth-child(4) i:hover {
     color: #dc4386;
 }
-
+.footer .socials a:nth-child(5) i:hover {
+    color: #0a63bc;
+}
 /* Animations */
 @keyframes slideInFromLeft {
     0% {
