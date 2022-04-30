@@ -92,10 +92,10 @@ code {
     gap: 30px;
     overflow: visible;
 }
-.showcase-text {
+/* .showcase-text {
     animation: slideInFromLeft 1s ease-in;
     -webkit-animation: slideInFromLeft 1s ease-in;
-}
+} */
 .showcase h1 {
     font-size: 40px;
 }
@@ -111,8 +111,8 @@ code {
     z-index: 100;
     justify-self: flex-end;
     /*animation*/
-    animation: slideInFromRight 1s ease-in;
-    -webkit-animation: slideInFromRight 1s ease-in;
+    /* animation: slideInFromRight 1s ease-in;
+    -webkit-animation: slideInFromRight 1s ease-in; */
 }
 .showcase-form .form-control {
     margin-block: 40px;
@@ -145,9 +145,6 @@ code {
 /* Stats */
 .stats {
     padding-top: 100px;
-    /*animations*/
-    animation: slideInFromBottom 1s ease-in;
-    -webkit-animation: slideInFromBottom 1s ease-in;
 }
 .stats-heading {
     max-width: 500px;
@@ -287,13 +284,15 @@ code {
 /* Removing scrollbar on animations */
 .languages .container,
 .features-main .container,
-.docs-main .container {
+.docs-main .container,
+.stats .container {
     -ms-overflow-style: none; /*hide scrollbar on edge, IE*/
     scrollbar-width: none; /*on firefox*/
 }
 .languages .container::-webkit-scrollbar,
 .features-main .container::-webkit-scrollbar,
-.docs-main .container::-webkit-scrollbar {
+.docs-main .container::-webkit-scrollbar,
+.stats .container::-webkit-scrollbar {
     display: none; /*on chrome, safari*/
 }
 
@@ -301,11 +300,11 @@ code {
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
+        transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -moz-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        -o-transform: translateX(-25%);
     }
     100% {
         opacity: 100;
@@ -319,11 +318,11 @@ code {
 @keyframes slideInFromRight {
     0% {
         opacity: 0;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
+        transform: translateX(25%);
+        -webkit-transform: translateX(25%);
+        -moz-transform: translateX(25%);
+        -ms-transform: translateX(25%);
+        -o-transform: translateX(25%);
     }
     100% {
         opacity: 100;
