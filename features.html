@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <!-- fontaswome -->
         <link
             rel="stylesheet"
@@ -12,9 +13,14 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
         <!-- css -->
         <link rel="stylesheet" href="styles/utilities.css" />
         <link rel="stylesheet" href="styles/style.css" />
+
+        <!-- AOS css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Loruki | Cloud Hosting Services</title>
         <title>Document</title>
     </head>
     <body>
@@ -66,7 +72,7 @@
         <!-- features main -->
         <section class="features-main my-2">
             <div class="container grid grid-3">
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-up">
                     <i class="fas fa-server fa-3x"></i>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -76,11 +82,11 @@
                         ratione.
                     </p>
                 </div>
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-right">
                     <i class="fas fa-server fa-3x"></i>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-left">
                     <i class="fas fa-laptop-code fa-3x"></i>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -89,7 +95,7 @@
                         maxime
                     </p>
                 </div>
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-up-right">
                     <i class="fas fa-database fa-3x"></i>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -97,7 +103,7 @@
                         recusandae,
                     </p>
                 </div>
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-up">
                     <i class="fas fa-power-off fa-3x"></i>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -105,7 +111,7 @@
                         recusandae, rem quaerat eos quis alias aliquid
                     </p>
                 </div>
-                <div class="card flex">
+                <div class="card flex" data-aos="fade-up-left">
                     <i class="fas fa-upload fa-3x"></i>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
@@ -149,5 +155,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- AOS script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ once: true, duration: 600 });
+        </script>
     </body>
 </html>

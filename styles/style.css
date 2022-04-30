@@ -283,6 +283,20 @@ code {
 .footer .socials a:nth-child(5) i:hover {
     color: #0a63bc;
 }
+
+/* Removing scrollbar on animations */
+.languages .container,
+.features-main .container,
+.docs-main .container {
+    -ms-overflow-style: none; /*hide scrollbar on edge, IE*/
+    scrollbar-width: none; /*on firefox*/
+}
+.languages .container::-webkit-scrollbar,
+.features-main .container::-webkit-scrollbar,
+.docs-main .container::-webkit-scrollbar {
+    display: none; /*on chrome, safari*/
+}
+
 /* Animations */
 @keyframes slideInFromLeft {
     0% {
